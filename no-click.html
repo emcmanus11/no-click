@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="no-click.js"></script>
+
+		<style type="text/css">
+		div * {
+			display: block;
+			margin: 10px;
+		}
+
+		.special-click {
+			color: teal;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="static">
+			<h1>Static Content</h1>
+			<a href="http://www.google.com">Link to google</a>
+			<br>
+			<button onclick="goToLink()">Static button</button>
+			<div class="special-click" onclick='random_function(\"Special\")'>Div with class</div>
+		</div>
+		<div id="dynamic">
+			<h1>Dynamically Added Content</h1>
+		</div>
+	</body>
+</html>
