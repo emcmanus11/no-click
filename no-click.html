@@ -7,9 +7,8 @@
 		<script type="text/javascript" src="no-click.js"></script>
 
 		<style type="text/css">
-		div * {
+		#static *, #dynamic * {
 			display: block;
-			margin: 10px;
 		}
 
 		.special-click {
@@ -19,6 +18,20 @@
 		</style>
 	</head>
 	<body>
+		<div>
+			<h1>NO CLICK MOUSE INTERACTION</h1>
+			<h3>How it works</h3>
+			<ul>
+				<li>Most elements on this page are clickable. However, you don't need to actually click!</li>
+				<li>To select an item, hover over it until the background color changes to red.</li>
+				<li>Then, remove your mouse pointer from the red area. The selected area will now turn blue.</li>
+				<li>Move your mouse pointer to the now blue area, and the target is selected.</li>
+				<li>Made a mistake?</li>
+				<li>Each selection state times out after 3 seconds, returning the background color of the item to it's original color and unselecting the unintended item.</li>
+				<li>As long as you don't enter the area when it's blue, you won't click a thing!</li>
+			</ul>
+
+		</div>
 		<div id="static">
 			<h1>Static Content</h1>
 			<a href="http://www.google.com">Link to google</a>
